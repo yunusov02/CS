@@ -1,0 +1,25 @@
+C++ provides five storage-class specifirs:
+    1. auto
+    2. register
+    3. extern
+    4. mutable
+    5. static
+
+
+An identifier’s storage class determines the period during which that identifier exists in
+memory. Some exist briefly, some are repeatedly created and destroyed and others exist for
+the entire execution of a program. First we discuss the storage classes static and automatic.
+    
+    1. auto - for local variables
+    2. register - for global variables
+    both of them rarely used because compiler automatically declare type of storage class
+
+An identifier’s scope is where the identifier can be referenced in a program. Some
+identifiers can be referenced throughout a program; others can be referenced from only
+limited portions of a program. Section 6.10 discusses the scope of identifiers.
+
+An identifier’s linkage determines whether it’s known only in the source file where it’s
+declared or across multiple files that are compiled, then linked together. An identifier’s
+storage-class specifier helps determine its storage class and linkage.
+
+
