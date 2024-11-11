@@ -1,8 +1,7 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
-
 
 int main() {
     int hours = 0;
@@ -26,10 +25,9 @@ int main() {
             salary = payPerHour * 40 + (hours - 40) * 1.5 * payPerHour;
         }
 
-        cout << fixed << setprecision(2); 
+        cout << fixed << setprecision(2);
         cout << "Salary is $" << salary << endl;
     }
-
 
     return 0;
 }

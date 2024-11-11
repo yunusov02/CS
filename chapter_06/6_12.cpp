@@ -1,12 +1,11 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
 float calculatePrintCharges(int counter, float hours);
 
 int main() {
-
     float hoursFirstCar, hoursSecondCar, hoursThirdCar;
     float chargesFirstCar = 0, chargesSecondCar = 0, chargesThirdCar = 0;
 
@@ -42,4 +41,3 @@ float calculatePrintCharges(int counter, float hours) {
 
     return charges;
 }
-

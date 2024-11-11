@@ -1,7 +1,7 @@
+#include "3_14_employee.h"
+
 #include "iostream"
 #include "string"
-
-#include "3_14_employee.h"
 
 using namespace std;
 
@@ -29,6 +29,6 @@ int main() {
 
     cout << "Test 4: ";
     is_equal_integers(employee.yearlySalary(), 14000);
-    
+
     return 0;
 }

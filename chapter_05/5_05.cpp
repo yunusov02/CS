@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-
     int countOfNumber;
     int sum = 0;
     int currentNumber;

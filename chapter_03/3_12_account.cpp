@@ -1,6 +1,7 @@
+#include "3_12_account.h"
+
 #include <iostream>
 #include <string>
-#include "3_12_account.h"
 
 using namespace std;
 
@@ -12,10 +13,9 @@ void is_equal_value(int a, int b) {
     }
 }
 
-
 int main() {
     Account account(100);
-    
+
     cout << "Test 1: ";
     is_equal_value(account.get_balance(), 100);
 

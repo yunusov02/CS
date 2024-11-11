@@ -2,19 +2,14 @@
 
 using namespace std;
 
-
 int gcd(int num1, int num2);
 
-
 int main() {
-
     int num1, num2;
     int max, min;
 
     cout << "Enter a number: ";
     cin >> num1 >> num2;
-
-
 
     cout << gcd(num1, num2) << endl;
 

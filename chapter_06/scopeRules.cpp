@@ -6,11 +6,9 @@ void useLocal();
 void useStaticLocal();
 void useGlobal();
 
-
 int x = 1;
 
 int main() {
-
     cout << "Global x in main is " << x << endl;
 
     int x = 5;
@@ -22,7 +20,7 @@ int main() {
     }
 
     cout << "local x in main's outer scope is " << x << endl;
-    
+
     useLocal();
     useStaticLocal();
     useGlobal();

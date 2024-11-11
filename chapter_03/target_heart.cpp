@@ -1,21 +1,15 @@
 #include <iostream>
 #include <string>
+
 #include "heartRates.h"
 
 using namespace std;
 
-void is_equal_integers(int a, int b) {
-    cout << (a == b) ? "OK\n" : "FAIL\n";
-}
+void is_equal_integers(int a, int b) { cout << (a == b) ? "OK\n" : "FAIL\n"; }
 
-void is_equal_strings(string a, string b) {
-    cout << (a == b) ? "OK\n" : "FAIL\n";
-}
-
-
+void is_equal_strings(string a, string b) { cout << (a == b) ? "OK\n" : "FAIL\n"; }
 
 int main() {
-
     HeartRates heartRates("John", "Doe", 12, 10, 1990);
 
     cout << "Test 1: ";
@@ -33,6 +27,6 @@ int main() {
 
     cout << "Test 5: ";
     is_equal_integers(heartRates.getTargetHeartRate(), res * 0.6);
-    
+
     return 0;
 }

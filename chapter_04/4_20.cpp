@@ -1,8 +1,7 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
-
 
 int main() {
     int hours = 0;
@@ -13,7 +12,7 @@ int main() {
 
     while (flag) {
         int isCorrectHours = 1;
-        
+
         while (isCorrectHours) {
             cout << "Enter worked hours: ";
             cin >> hours;
@@ -23,9 +22,8 @@ int main() {
             }
         }
 
-
         if (hours == -1) {
-                flag = 0;
+            flag = 0;
         } else {
             cout << "Enter hourly rate of the employee: ";
             cin >> payPerHour;
@@ -36,9 +34,9 @@ int main() {
                 salary = payPerHour * 40 + (hours - 40) * 1.5 * payPerHour;
             }
 
-            cout << fixed << setprecision(2); 
+            cout << fixed << setprecision(2);
             cout << "Salary is $" << salary << endl;
-        }        
+        }
     }
     return 0;
 }

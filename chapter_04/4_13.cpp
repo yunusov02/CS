@@ -3,9 +3,7 @@
 
 using namespace std;
 
-
 int main() {
-
     int total_miles = 0;
     int total_gasballons = 0;
 
@@ -21,7 +19,7 @@ int main() {
         }
         cout << "Enter gallons used: ";
         cin >> gasballons;
-        
+
         total_miles += miles;
         total_gasballons += gasballons;
 
@@ -31,9 +29,7 @@ int main() {
         cout << "MPG this tankful: " << this_mpg << endl;
         cout << "Total MPG: " << total_mpg << endl;
         cout << "\n";
-
     }
 
     return 0;
-
 }

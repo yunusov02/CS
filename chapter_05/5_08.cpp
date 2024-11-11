@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-
     int countOfNumber;
     int smallestValue = 0;
     int currentNumber;
@@ -13,7 +12,6 @@ int main() {
 
     cout << "Enter a number: ";
     cin >> smallestValue;
-
 
     for (int i = 0; i < countOfNumber - 1; i++) {
         cout << "Enter a number: ";

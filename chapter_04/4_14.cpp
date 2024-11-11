@@ -1,5 +1,5 @@
 #include <iostream>
- 
+
 using namespace std;
 
 int main() {
@@ -44,7 +44,6 @@ int main() {
             cout << "Credit Limit Not Exceeded." << endl;
             cout << "-----------------------------------" << endl;
         }
-
     }
 
     return 0;

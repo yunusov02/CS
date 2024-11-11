@@ -1,13 +1,9 @@
-#include <iostream>
 #include <iomanip>
-
-
+#include <iostream>
 
 using namespace std;
 
-
 int main() {
-
     int sales = 0;
     float res;
 
@@ -20,13 +16,10 @@ int main() {
         }
 
         res = 200 + sales * 0.09;
-        cout << fixed << setprecision(2); 
+        cout << fixed << setprecision(2);
         cout << "Salary is: " << res << endl;
         cout << "\n";
-
-
     }
-
 
     return 0;
 }

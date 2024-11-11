@@ -1,6 +1,7 @@
+#include "3_13_invoice.h"
+
 #include <iostream>
 #include <string>
-#include "3_13_invoice.h"
 
 using namespace std;
 
@@ -19,7 +20,6 @@ void is_equal_strings(string a, string b) {
         cout << "FAIL" << endl;
     }
 }
-
 
 int main() {
     Invoice invoice("4567", "This is Description", 5, 4);

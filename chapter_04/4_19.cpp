@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-
     int firstLargest = 0;
     int secondLargest = 0;
     int currentNumber = 0;
@@ -28,4 +27,4 @@ int main() {
     cout << "Second Largest Number: " << secondLargest << endl;
 
     return 0;
-} 
+}

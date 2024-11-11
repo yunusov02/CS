@@ -1,11 +1,10 @@
-#include <iostream>
-#include <iomanip>
 #include <cstdlib>
+#include <iomanip>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-
     for (int counter = 1; counter <= 20; counter++) {
         cout << setw(10) << (1 + rand() % 6);
 

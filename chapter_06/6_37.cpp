@@ -5,7 +5,6 @@ using namespace std;
 int nonrecursiveFibanacci(int n);
 int recursiveFibanacci(int n);
 
-
 int main() {
     int number;
 
@@ -17,9 +16,7 @@ int main() {
     return 0;
 }
 
-
 int nonrecursiveFibanacci(int number) {
-
     int first = 0, second = 1;
 
     int currentNumber = 0;
@@ -34,7 +31,6 @@ int nonrecursiveFibanacci(int number) {
 }
 
 int recursiveFibanacci(int number) {
-
     int num1 = 0, num2 = 1;
 
     if (number <= 3) {

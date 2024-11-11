@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main() {
     int largest = 0;
     int number = 0;

@@ -1,16 +1,13 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
-
-int makingNumber(int a, int b, int c, int d) {
-    return 1000 * a + 100 * b + 10 * c + d;
-}
+int makingNumber(int a, int b, int c, int d) { return 1000 * a + 100 * b + 10 * c + d; }
 
 void encrypt(int a, int b, int c, int d) {
     int x, y, z, t;
-    
+
     x = (a + 7) % 10;
     y = (b + 7) % 10;
     z = (c + 7) % 10;
@@ -31,7 +28,6 @@ void decrypt(int a, int b, int c, int d) {
 }
 
 int main() {
-
     int number;
     int option;
 

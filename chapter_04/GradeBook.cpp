@@ -1,24 +1,21 @@
-#include <iostream>
 #include "GradeBook.h"
+
+#include <iostream>
 
 using namespace std;
 
-GradeBook::GradeBook(string name) {
-    setCourseName(name);
-}
+GradeBook::GradeBook(string name) { setCourseName(name); }
 
 void GradeBook::setCourseName(string name) {
     if (name.length() <= 25) {
         courseName = name;
     } else {
         courseName = name.substr(0, 25);
-        cout << "Name \"" << name << "\" exceed maximum length (25)." << endl; 
+        cout << "Name \"" << name << "\" exceed maximum length (25)." << endl;
     }
 }
 
-string GradeBook::getCourseName() {
-    return courseName;
-}
+string GradeBook::getCourseName() { return courseName; }
 
 void GradeBook::displayMessage() {
     cout << "Welcome to the best book for\n" << getCourseName() << "!\n" << endl;

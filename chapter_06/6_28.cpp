@@ -5,7 +5,6 @@ using namespace std;
 int isPerfect(int number);
 
 int main() {
-
     int perfectNumber;
 
     cout << "Enter a number: ";
@@ -31,6 +30,6 @@ int isPerfect(int number) {
     }
 
     int res = number == sum ? 1 : 0;
-    
+
     return res;
 }

@@ -1,5 +1,5 @@
-#include <iostream>
 #include <cmath>
+#include <iostream>
 
 using namespace std;
 
@@ -20,7 +20,7 @@ int reverse(int number) {
     int reversedNumber = 0;
     int power = findPower(number);
     int reminder = 0;
-    
+
     while (number > 0) {
         reminder = number % 10;
         reversedNumber += reminder * pow(10, power);
@@ -29,9 +29,7 @@ int reverse(int number) {
     }
 
     return reversedNumber;
-    
 }
-
 
 int findPower(int number) {
     int power = 0;

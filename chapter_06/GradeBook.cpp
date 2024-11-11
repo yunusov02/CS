@@ -1,8 +1,8 @@
-#include <iostream>
 #include "GradeBook.h"
 
-using namespace std;
+#include <iostream>
 
+using namespace std;
 
 GradeBook::GradeBook(string name) {
     setCourseName(name);
@@ -10,17 +10,17 @@ GradeBook::GradeBook(string name) {
 }
 
 void GradeBook::setCourseName(string name) {
-    if(name.length() <= 25) {
+    if (name.length() <= 25) {
         courseName = name;
     } else {
-        courseName = name.substr( 0, 25 );
-        cout << "Name \"" << name << "\" exceeds maximum length (25).\n"<< "Limiting courseName to first 25 characters.\n" << endl;
+        courseName = name.substr(0, 25);
+        cout << "Name \"" << name << "\" exceeds maximum length (25).\n"
+             << "Limiting courseName to first 25 characters.\n"
+             << endl;
     }
 }
 
-string GradeBook::getCourseName() {
-    return courseName;
-}
+string GradeBook::getCourseName() { return courseName; }
 
 void GradeBook::displayMessage() {
     cout << "Welcome to the grade book for\n" << getCourseName() << "!\n" << endl;
@@ -32,11 +32,10 @@ void GradeBook::inputGrades() {
     int grade3;
     cout << "Enter three integer grades: ";
     cin >> grade1 >> grade2 >> grade3;
-    maximumGrade = maximum( grade1, grade2, grade3 );
+    maximumGrade = maximum(grade1, grade2, grade3);
 }
 
 int GradeBook::maximum(int x, int y, int z) {
-
     int maximumValue = x;
 
     if (y > maximumValue) {
@@ -46,10 +45,8 @@ int GradeBook::maximum(int x, int y, int z) {
     if (z > maximumValue) {
         maximumValue = z;
     }
-    
+
     return maximumValue;
 }
 
-void GradeBook::displayGradeReport() {
-    cout << "Maximum of grades entered: " << maximumGrade << endl;
-}
+void GradeBook::displayGradeReport() { cout << "Maximum of grades entered: " << maximumGrade << endl; }
