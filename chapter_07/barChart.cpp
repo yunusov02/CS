@@ -1,10 +1,9 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
 int main() {
-
     const int arraySize = 11;
 
     int n[arraySize] = {0, 0, 0, 0, 0, 0, 1, 2, 4, 2, 1};

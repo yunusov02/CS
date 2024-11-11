@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int linearSearch(const int [], int, int);
+int linearSearch(const int[], int, int);
 
 int main() {
     const int arraySize = 100;
@@ -28,7 +28,7 @@ int main() {
 }
 
 int linearSearch(const int array[], int key, int sizeOfArray) {
-    for (int i =0; i < sizeOfArray; i++) {
+    for (int i = 0; i < sizeOfArray; i++) {
         if (array[i] == key) {
             return i;
         }

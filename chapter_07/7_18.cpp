@@ -5,7 +5,6 @@ using namespace std;
 int whatIsThis(int array[], int size);
 
 int main() {
-
     const int arraySize = 10;
     int array[arraySize] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
@@ -20,5 +19,5 @@ int whatIsThis(int array[], int size) {
         return 0;
     }
 
-    return array[size-1] + whatIsThis(array, size-1);
+    return array[size - 1] + whatIsThis(array, size - 1);
 }

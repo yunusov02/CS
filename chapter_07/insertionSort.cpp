@@ -2,10 +2,9 @@
 
 using namespace std;
 
-void output(int [], const int);
+void output(int[], const int);
 
-int main () {
-
+int main() {
     const int arraySize = 10;
     int array[arraySize] = {34, 56, 4, 10, 77, 51, 93, 30, 5, 52};
     int currentValue;
@@ -14,17 +13,15 @@ int main () {
     output(array, arraySize);
 
     for (int i = 1; i < arraySize; i++) {
-        
         currentValue = array[i];
         int index = i;
 
-        while ( ( index > 0 ) && ( array[ index - 1 ] > currentValue ) ) {
-            array[ index ] = array[ index - 1 ];
+        while ((index > 0) && (array[index - 1] > currentValue)) {
+            array[index] = array[index - 1];
             index--;
         }
-        
-        array[index] = currentValue;
 
+        array[index] = currentValue;
     }
 
     cout << "Sorted Array: ";

@@ -1,18 +1,17 @@
-#include <iostream>
-#include <iomanip>
 #include <stdlib.h>
+
+#include <iomanip>
+#include <iostream>
 
 using namespace std;
 
 const int poleSize = 20;
 
-
 void outputPole(int array[][poleSize]);
 void menu();
 
-
-enum PenPosition {PEN_UP, PEN_DOWN};
-enum Direction {RIGHT, DOWN, LEFT, TOP};
+enum PenPosition { PEN_UP, PEN_DOWN };
+enum Direction { RIGHT, DOWN, LEFT, TOP };
 
 struct Turtle {
     int x = 0;
@@ -21,9 +20,7 @@ struct Turtle {
     Direction direction = RIGHT;
 };
 
-
 int main() {
-
     int pole[poleSize][poleSize] = {};
     int flag = 1;
 
@@ -37,37 +34,41 @@ int main() {
         cout << "Enter your choice: ";
         cin >> choice;
 
-        switch(choice) {
+        switch (choice) {
             case 1:
                 turtle.pen = PEN_UP;
                 break;
             case 2:
                 turtle.pen = PEN_DOWN;
                 break;
-            case 3: // RIGHT
-                turtle.direction = static_cast< Direction >((turtle.direction + 1) % 4);
+            case 3:  // RIGHT
+                turtle.direction = static_cast<Direction>((turtle.direction + 1) % 4);
                 break;
-            case 4: // LEFT
-                turtle.direction = static_cast < Direction >((turtle.direction + 3) % 4);
+            case 4:  // LEFT
+                turtle.direction = static_cast<Direction>((turtle.direction + 3) % 4);
                 break;
             case 5:
                 cin >> forwardGo;
-                
+
                 // Here we will write code to change some values
                 // because now we don't know pointers;
 
                 if (turtle.pen != PEN_UP) {
                     for (int i = 0; i < forwardGo; i++) {
-                        if (turtle.direction == RIGHT && turtle.y + 1 < poleSize) turtle.y++;
-                        else if (turtle.direction == DOWN && turtle.x + 1 < poleSize) turtle.x++;
-                        else if (turtle.direction == LEFT && turtle.y - 1 >= 0) turtle.y--;
-                        else if (turtle.direction == TOP && turtle.x - 1 >= 0) turtle.x--;
+                        if (turtle.direction == RIGHT && turtle.y + 1 < poleSize)
+                            turtle.y++;
+                        else if (turtle.direction == DOWN && turtle.x + 1 < poleSize)
+                            turtle.x++;
+                        else if (turtle.direction == LEFT && turtle.y - 1 >= 0)
+                            turtle.y--;
+                        else if (turtle.direction == TOP && turtle.x - 1 >= 0)
+                            turtle.x--;
 
                         if (turtle.pen == PEN_DOWN) {
                             pole[turtle.x][turtle.y] = 1;
                         }
                     }
-               }
+                }
 
                 break;
             case 6:
@@ -86,7 +87,6 @@ int main() {
     return 0;
 }
 
-
 void outputPole(int array[][poleSize]) {
     for (int i = 0; i < poleSize; i++) {
         for (int j = 0; j < poleSize; j++) {
@@ -100,7 +100,6 @@ void outputPole(int array[][poleSize]) {
     }
 }
 
-
 void menu() {
     cout << "Menu\n" << endl;
 
@@ -111,5 +110,4 @@ void menu() {
     cout << "5, 10  Move forward 10 spaces (or a number other than 10)" << endl;
     cout << "6  Print the 20-by-20 array" << endl;
     cout << "9  End of Data" << endl;
-    
 }

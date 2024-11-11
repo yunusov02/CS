@@ -1,33 +1,30 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 #include <vector>
 
 using namespace std;
 
-void outputVector(const vector< int > &);
-void inputVector(vector< int > &);
+void outputVector(const vector<int> &);
+void inputVector(vector<int> &);
 
 int main() {
+    vector<int> integers1(7);
+    vector<int> integers2(10);
 
-    vector< int > integers1(7);
-    vector< int > integers2(10);
-
-    cout << "Size of vector integers1 is " << integers1.size()
-    << "\nvector after initialization: " << endl;
+    cout << "Size of vector integers1 is " << integers1.size() << "\nvector after initialization: " << endl;
 
     outputVector(integers1);
 
-    cout << "\nSize of vector integers2 is " << integers2.size()
-    << "\nVector after initialization:" << endl;
+    cout << "\nSize of vector integers2 is " << integers2.size() << "\nVector after initialization:" << endl;
 
-    outputVector(integers2); 
+    outputVector(integers2);
 
     cout << "\nEnter 17 integers:" << endl;
     inputVector(integers1);
     inputVector(integers2);
 
     cout << "\nAfter input the vectors contain:\n"
-    << "integers1:" << endl;
+         << "integers1:" << endl;
     outputVector(integers1);
 
     cout << "integers2" << endl;
@@ -39,10 +36,9 @@ int main() {
         cout << "integers1 and integers2 are not equal" << endl;
     }
 
-    vector< int > integers3(integers1);
+    vector<int> integers3(integers1);
 
-    cout << "\nSize of vector integers3 is " << integers3.size()
-    << "\nvector after initialization:" << endl;
+    cout << "\nSize of vector integers3 is " << integers3.size() << "\nvector after initialization:" << endl;
     outputVector(integers3);
 
     cout << "\nAssigning integers2 to integers1:" << endl;
@@ -69,8 +65,7 @@ int main() {
     return 0;
 }
 
-
-void outputVector(const vector< int > &array) {
+void outputVector(const vector<int> &array) {
     size_t i;
 
     for (i = 0; i < array.size(); i++) {
@@ -86,8 +81,7 @@ void outputVector(const vector< int > &array) {
     }
 }
 
-
-void inputVector(vector< int > &array) {
+void inputVector(vector<int> &array) {
     for (size_t i = 0; i < array.size(); i++) {
         cin >> array[i];
     }
