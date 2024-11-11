@@ -10,7 +10,7 @@ int main() {
     cout << "Sum is " << a + b + c << endl;
     cout << "Average is " << (a + b + c) / 3 << endl;
     cout << "Product is " << a * b * c << endl;
-    
+
     int smallest, largest;
 
     if (a > b)
@@ -28,7 +28,6 @@ int main() {
             largest = c;
         else
             largest = b;
-
 
     if (a < b)
         if (a < c)
