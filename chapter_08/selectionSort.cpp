@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
@@ -7,7 +7,6 @@ void selectionSort(int *const, const int);
 void swap(int *const, int *const);
 
 int main() {
-
     const int arraySize = 10;
     int array[arraySize] = {2, 6, 4, 8, 10, 12, 89, 68, 45, 37};
 
@@ -23,12 +22,11 @@ int main() {
     for (int i = 0; i < arraySize; i++) {
         cout << setw(4) << array[i];
     }
-    
+
     cout << endl;
 
     return 0;
 }
-
 
 void selectionSort(int *const array, const int size) {
     int smallest;

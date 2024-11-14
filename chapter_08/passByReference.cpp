@@ -25,8 +25,6 @@ int cubeByValue(int number) {
 
 */
 
-
-
 #include <iostream>
 
 using namespace std;
@@ -41,6 +39,4 @@ int main() {
     return 0;
 }
 
-void cubeByReference(int *number) {
-    *number = *number * *number * *number;
-}
+void cubeByReference(int *number) { *number = *number * *number * *number; }

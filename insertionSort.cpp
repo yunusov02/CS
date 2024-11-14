@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
@@ -8,9 +8,8 @@ void outputArray(int *, const int);
 void insertionSort(int *, const int);
 
 int main() {
-
     const int arraySize = 10;
-    int array[arraySize] = { 34, 56, 4, 10, 77, 51, 93, 30, 5, 52 };
+    int array[arraySize] = {34, 56, 4, 10, 77, 51, 93, 30, 5, 52};
 
     cout << "Unsorted Array is: ";
     outputArray(array, arraySize);
@@ -45,7 +44,7 @@ void insertionSort(int *array, const int size) {
             array[moveItem] = array[moveItem - 1];
             moveItem--;
         }
-        
+
         array[moveItem] = insert;
     }
 }

@@ -1,5 +1,5 @@
-#include <iostream>
 #include <iomanip>
+#include <iostream>
 
 using namespace std;
 
@@ -8,9 +8,8 @@ void outputArray(int *, const int);
 void quickSort(int *, const int);
 
 int main() {
-
     const int arraySize = 10;
-    int array[arraySize] = { 34, 56, 4, 10, 77, 51, 93, 30, 5, 52 };
+    int array[arraySize] = {34, 56, 4, 10, 77, 51, 93, 30, 5, 52};
 
     cout << "Unsorted Array is: ";
     outputArray(array, arraySize);
@@ -36,6 +35,4 @@ void outputArray(int *array, const int size) {
     cout << endl;
 }
 
-void quickSort(int *array, const int size) {
-    
-}
+void quickSort(int *array, const int size) {}
