@@ -16,7 +16,7 @@ int main() {
     for (int i = 1; i < arraySize - 1; i++) {
         if (array[i] == 0) continue;
 
-        for (int j = 1 + array[i]; j < arraySize; j += array[i]) {
+        for (int j = i + array[i]; j < arraySize; j += array[i]) {
             array[j] = 0;
         }
     }
