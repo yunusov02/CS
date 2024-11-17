@@ -4,13 +4,13 @@
 using namespace std;
 
 class Invoice {
-    private:
-        string partNumber;
-        string partDescription;
-        int quantity;
-        int price;
+   private:
+    string partNumber;
+    string partDescription;
+    int quantity;
+    int price;
 
-  public:
+   public:
     Invoice(string partNumber, string partDescription, int quantity, int price) {
         set_partNumber(partNumber);
         set_partDescription(partDescription);
@@ -18,17 +18,11 @@ class Invoice {
         set_price(price);
     }
 
-    int getInvoiceAmount() {
-        return quantity * price;
-    }
+    int getInvoiceAmount() { return quantity * price; }
 
-    void set_partNumber(string pNumber) {
-        partNumber =pNumber;
-    }
+    void set_partNumber(string pNumber) { partNumber = pNumber; }
 
-    void set_partDescription(string pDescription) {
-        partDescription = pDescription;
-    }
+    void set_partDescription(string pDescription) { partDescription = pDescription; }
 
     void set_quantity(int q) {
         if (q > 0) {
@@ -46,20 +40,11 @@ class Invoice {
         }
     }
 
-    string get_partNumber() {
-        return partNumber;
-    }
+    string get_partNumber() { return partNumber; }
 
-    string get_partDescription() {
-        return partDescription;
-    }
+    string get_partDescription() { return partDescription; }
 
-    int get_quantity() {
-        return quantity;
-    }
+    int get_quantity() { return quantity; }
 
-    int get_price() {
-        return price;
-    }
-
+    int get_price() { return price; }
 };
