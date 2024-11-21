@@ -20,6 +20,7 @@ class DeckOfCards {
         int moreCards();
         Card dealCard();
         void shuffle();
+        int getCountOfCards() const;
 
 };
 

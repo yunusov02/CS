@@ -10,16 +10,20 @@ using namespace std;
 
 int DeckOfCards::countOfCards = SUITS * FACES;
 
+int DeckOfCards::getCountOfCards() const {
+    return countOfCards;
+}
+
 DeckOfCards::DeckOfCards() {
     for (int suit = 0; suit < SUITS; suit++) {
         for (int face = 0; face < FACES; face++) {
-            deck.push_back(Card(suit, face));
+            deck.push_back(Card(face, suit));
         }
     }
 }
 
 int DeckOfCards::moreCards() {
-    int res = countOfCards < 52 ? 1 : 0;
+    int res = countOfCards > 0 && countOfCards < 52 ? 1 : 0;
     return res;
 }
 
