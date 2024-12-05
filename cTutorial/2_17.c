@@ -12,6 +12,6 @@ int main() {
     printf("product of %d and %d:    %d\n", num1, num2, num1 * num2);
     printf("difference of %d and %d:    %d\n", num1, num2, num1 - num2);
     printf("division of %d and %d:    %d\n", num1, num2, num1 / num2);
-
+    printf("Division of %d", 45);
     return 0;
 }
